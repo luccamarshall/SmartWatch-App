@@ -1,0 +1,52 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+body{
+    background-color: black
+}
+
+.app button {
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 60px;
+    width: 400px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.app button:active {
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}
+
+.app button:not(:first-child) {
+    margin-top: 10px;
+}
+
+.but1 {
+    border-radius: 5%;
+    background-color: #48abe0;
+}
+
+.but2 {
+    border-radius: 10%;
+    background-color: #48abe0;
+}
+
+.but3 {
+    border-radius: 20%;
+    background-color: #48abe0;
+}
+
+.but4 {
+    border-radius: 30%;
+    background-color: red;
+}
