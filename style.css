@@ -1,12 +1,14 @@
-#app {
+body{
+    background-color: black;
+}
+
+.app {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-body{
-    background-color: black
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 .app button {
