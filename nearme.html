@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title></title>
 </head>
 <body>
-    
+    <div class = map>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2200.1628786579413!2d-9.157361771273457!3d38.752230361936434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19330333cd63e3%3A0xe69947220603097!2sUniversity%20of%20Lisbon!5e0!3m2!1sen!2spt!4v1681927754172!5m2!1sen!2spt"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href = "home.html">
+            <button> Home </button>
+            </a>
+    </div>
 </body>
 </html>
+
+<!--era suposto haver um mapa utilizando o goodle maps api, que infelizmente é complicado usar, pois nenhum 
+    de nós consegui arranjar uma chave para funcionar, contudo o código para tal será adicionado aqui
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <title></title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            #map {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var location = { lat: 38.7565, lng: -9.1429 };
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 7,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuUc_rF_Mvi8AWiEvzzCTMXr0OyTgtOuw&callback=initMap"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpZrk16Go2uDFM4hFG-H25Vk9VMlctJ34&callback=initMap"></script>
+    </body>
+    
+    </html>-->

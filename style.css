@@ -2,23 +2,6 @@ body{
     background-color: black;
 }
 
-.image {
-    display: none;
-    position: relative;
-}
-
-img {
-    width: 40%;
-    height: 35%;
-    position: absolute;
-    top: 5px;
-    bottom: 5px;
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 0 2px 4px #48abe0;
-    background-color: #48abe0;
-}
-
 /*css do offers.html*/
 
 .offers {
@@ -56,7 +39,28 @@ button {
     background-color: #48abe0;
 }
 
-/* css do base.html*/
+.image {
+    display: none;
+    position: relative;
+}
+
+img {
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 4px #48abe0;
+    background-color: #48abe0;
+}
+
+/* css do home.html*/
+
+a {
+    padding: 5px;
+}
 
 .app {
     display: flex;
@@ -88,3 +92,51 @@ button {
 .app button:not(:first-child) {
     margin-top: 10px;
 }
+
+/* css do nearme.html*/
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.map iframe {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 4px #48abe0;
+    background-color: #48abe0;
+}
+
+.map button {
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 60px;
+    width: 400px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.map button:active {
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}	
+
+.map button:not(:first-child) {
+    margin-top: 10px;
+}
+
+
+
