@@ -2,6 +2,13 @@ body{
     background-color: black;
 }
 
+.image {
+    display: none;
+    position: relative;
+}
+
+/*css do offers.html*/
+
 .offers {
     display: flex;
     flex-direction: column;
@@ -33,26 +40,11 @@ body{
     margin-top: 10px;
 }
 
-.one {
-    border-radius: 5%;
+button {
     background-color: #48abe0;
 }
 
-.two {
-    border-radius: 10%;
-    background-color: #48abe0;
-}
-
-.three {
-    border-radius: 20%;
-    background-color: #48abe0;
-}
-
-.four {
-    border-radius: 30%;
-    background-color: #48abe0;
-}
-
+/* css do base.html*/
 
 .app {
     display: flex;
@@ -83,24 +75,4 @@ body{
 
 .app button:not(:first-child) {
     margin-top: 10px;
-}
-
-.but1 {
-    border-radius: 5%;
-    background-color: #48abe0;
-}
-
-.but2 {
-    border-radius: 10%;
-    background-color: #48abe0;
-}
-
-.but3 {
-    border-radius: 20%;
-    background-color: #48abe0;
-}
-
-.but4 {
-    border-radius: 30%;
-    background-color: red;
 }
