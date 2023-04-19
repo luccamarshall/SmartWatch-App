@@ -7,6 +7,18 @@ body{
     position: relative;
 }
 
+img {
+    width: 40%;
+    height: 35%;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 4px #48abe0;
+    background-color: #48abe0;
+}
+
 /*css do offers.html*/
 
 .offers {
