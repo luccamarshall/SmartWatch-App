@@ -2,6 +2,58 @@ body{
     background-color: black;
 }
 
+.offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.offers button {
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 100px;
+    width: 400px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.offers button:active {
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}
+
+.offers button:not(:first-child) {
+    margin-top: 10px;
+}
+
+.one {
+    border-radius: 5%;
+    background-color: #48abe0;
+}
+
+.two {
+    border-radius: 10%;
+    background-color: #48abe0;
+}
+
+.three {
+    border-radius: 20%;
+    background-color: #48abe0;
+}
+
+.four {
+    border-radius: 30%;
+    background-color: #48abe0;
+}
+
+
 .app {
     display: flex;
     flex-direction: column;

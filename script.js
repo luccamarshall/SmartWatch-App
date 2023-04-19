@@ -1,3 +1,5 @@
+window.onload = () => {
+
 const buttons = document.querySelectorAll('.app button');
 
 buttons.forEach(button => {
@@ -7,3 +9,4 @@ buttons.forEach(button => {
         window.location.href = fileName + '.html';
     });
 });
+}
