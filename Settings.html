@@ -21,10 +21,35 @@
         
         <button id="Toggle" type="button">Toggle Light/Dark Mode</button>
         <button id="Redeem code" type="button" onclick="createTextBox()">Redeem Code</button>
-
+        <input type="text" value="Insert code" id="text">
+        <input type="submit" value="Redeem" id="redeem">
+        <a href= "home.html">
+            <button> Home </button>
+        </a>
     </div>
     <script>
         function createTextBox(){
+            const isShowingText = document.getElementById("text").style.display === 'block';
+            const isShowingRedeem = document.getElementById("redeem").style.display === 'block';
+            if (isShowingText & isShowingRedeem) { 
+                document.getElementById("text").style.display = 'none';
+
+                document.getElementById("redeem").style.display = 'none';
+            } else {
+                document.getElementById("text").style.display = "block";
+
+                document.getElementById("text").style.display = "absolute";
+
+                document.getElementById("redeem").style.display = "block";
+
+                document.getElementById("redeem").style.display = "absolute";
+
+            }
+        }
+    </script>
+    <!--
+    <script>
+         function createTextBox(){
             const input = document.createElement("input");
             input.type = "text";
             input.value = "Insert code"
@@ -35,9 +60,6 @@
             document.getElementById("settings").appendChild(input);
             document.getElementById("settings").appendChild(submit);
         }
-    </script>
-    <!--
-    <script>
         //show and hide dropdown list item on button click
          <button onclick="show_hide()" class="button">Preferences</button>
         function show_hide() {

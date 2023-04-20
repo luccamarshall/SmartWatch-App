@@ -192,6 +192,7 @@ a {
     box-shadow: 0 2px 4px darkslategray;
     border-color: #48abe0;
     margin-top: 10px;
+    display: none;
 }
 
 #redeem {
@@ -199,5 +200,6 @@ a {
     background-color: #48abe0;
     box-shadow: 0 2px 4px darkslategray;
     border-color: #48abe0;
+    display: none;
 }
 
