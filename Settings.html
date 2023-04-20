@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="settings" id="settings">
+        <label for="Preferences">Preferences:</label>
+        <br>
+        <select name="Preferences" id="Preferences">
+            <option value="None">None</option>
+            <option value="Comida mexicana">Comida Mexicana</option>
+            <option value="Comida italiana">Comida Italiana</option>
+            <option value="Comida japonesa">Comida Japonesa</option>
+            <option value="Fast food">Fast Food</option>
+          </select>
+        
+        <button id="Toggle" type="button">Toggle Light/Dark Mode</button>
+        <button id="Redeem code" type="button" onclick="createTextBox()">Redeem Code</button>
+
+    </div>
+    <script>
+        function createTextBox(){
+            const input = document.createElement("input");
+            input.type = "text";
+            input.value = "Insert code"
+            const submit = document.createElement("input");
+            submit.type = "submit";
+            submit.value = "Redeem";
+            submit.id = "redeem";
+            document.getElementById("settings").appendChild(input);
+            document.getElementById("settings").appendChild(submit);
+        }
+    </script>
+    <!--
+    <script>
+        //show and hide dropdown list item on button click
+         <button onclick="show_hide()" class="button">Preferences</button>
+        function show_hide() {
+           var click = document.getElementById("");
+           if(click.style.display ==="none") {
+              click.style.display ="block";
+           } else {
+              click.style.display ="none";
+           } 
+        }
+     </script>
+    -->
 </body>
 </html>
