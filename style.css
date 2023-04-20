@@ -149,3 +149,69 @@ a {
 .map button:not(:first-child) {
     margin-top: 10px;
 }
+
+/* css do Settings.html */
+
+.settings{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.settings label{
+    font-size: 25px;
+}
+
+.settings select {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 100px;
+    width: 400px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-color: #48abe0;
+}
+
+.settings button {
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 100px;
+    width: 400px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.settings button:active {
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}
+
+.settings input {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 90px;
+    width: 385px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-color: #48abe0;
+    margin-top: 10px;
+    display: none;
+}
+
+#redeem {
+    color: white;
+    background-color: #48abe0;
+    box-shadow: 0 2px 4px darkslategray;
+    border-color: #48abe0;
+    display: none;
+}
+
