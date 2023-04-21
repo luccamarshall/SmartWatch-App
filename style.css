@@ -215,3 +215,62 @@ a {
     display: none;
 }
 
+/* css do Shops.html */
+.op{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.op button{
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 100px;
+    width: 400px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.op button:active {
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}
+
+/* css do restaurants.html */
+.search{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.search select{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 100px;
+    width: 400px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-color: #48abe0;
+
+}
+
+a{
+    color: black;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
