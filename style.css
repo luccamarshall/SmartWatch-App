@@ -6,7 +6,9 @@ body{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
-    grid-template-areas: "main";
+    grid-template-areas:"main" ;
+    
+
     
 }
 /*css do offers.html*/
@@ -73,13 +75,13 @@ a {
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    height: 700px;
+    height: 400px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    
     background-color: black
 }
 
@@ -172,7 +174,7 @@ a {
     font-size: 25px;
     height: 100px;
     width: 400px;
-    box-shadow: 0 2px 4px darkslategray;
+    box-shadow: 0 4px 8px darkslategray;
     border-color: #48abe0;
 }
 
