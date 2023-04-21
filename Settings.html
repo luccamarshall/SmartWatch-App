@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title></title>
 </head>
 <body>
-    <div class="settings" id="settings">
-        <label for="Preferences">Preferences:</label>
-        <br>
-        <select name="Preferences" id="Preferences" onchange="saveOption()">
-            <option value="select">Select a food preference</option>
-            <option value="Comida mexicana">Mexican</option>
-            <option value="Comida italiana">Italian</option>
-            <option value="Comida japonesa">Japanese</option>
-            <option value="Fast food">Fast Food</option>
-        </select>
-        
-        <button id="Toggle" type="button">Toggle Light/Dark Mode</button>
-        <button id="Redeem code" type="button" onclick="createTextBox()">Redeem Code</button>
-        <input type="text" value="Insert code" id="text">
-        <input type="submit" value="Redeem" id="redeem">
-        <a href= "home.html">
-            <button> Home </button>
-        </a>
+    <div id = "size">
+        <header id = "settingsHead">
+            Settings 
+        </header>
+        <div class="settings" id="settings">
+            <select id="Preferences" onchange="saveOption()">
+                <option value="select">Select a food preference</option>
+                <option value="Comida mexicana">Mexican</option>
+                <option value="Comida italiana">Italian</option>
+                <option value="Comida japonesa">Japanese</option>
+                <option value="Fast food">Fast Food</option>
+            </select>
+            
+            <button id="Toggle">Toggle Light/Dark Mode</button>
+            <button id="Redeem code" onclick="createTextBox()">Redeem Code</button>
+            <input type="text" value="Insert code" id="text">
+            <input type="submit" value="Redeem" id="redeem">
+        </div>
     </div>
+    <a href="home.html">
+        <button id="homeButton">Home</button>
+    </a>
     <!--
     <script>
          function createTextBox(){

@@ -17,6 +17,17 @@ body{
 }
 /*css do offers.html*/
 
+#offersHead {
+    grid-area: header;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding-top: 8px;
+        font-size: 40px;
+}
+
 .offers {
     grid-area: main;
     flex-direction: column;
@@ -31,7 +42,7 @@ body{
     color: white;
     border-radius: 5px;
     padding: 5px;
-    font-size: 15px;
+    font-size: 20px;
     height: 75px;
     width: 400px;
     box-shadow: 0 2px 4px darkslategray;
@@ -60,7 +71,7 @@ button {
 
 img {
     width: 390px;
-    height: 300px;
+    height: 310px;
     position: absolute;
     top: 5px;
     bottom: 5px;
@@ -76,7 +87,7 @@ a {
     padding: 5px;
 }
 
-header {
+#homeHead {
     grid-area: header;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -88,6 +99,7 @@ header {
 }
 
 .app {
+    grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     height: 325px;
@@ -122,6 +134,17 @@ header {
 
 /* css do nearme.html*/
 
+#nearmeHead {
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    font-size: 40px;
+}
+
 .map {
     grid-area: main;
     display: flex;
@@ -131,61 +154,61 @@ header {
 }
 
 .map iframe {
+    position: relative;
+    top: 3px;
     width: 450px;
-    height: 355px;
-    display: flex;
-    flex-direction: column;
-    align-items: relative;
-    justify-content: relative;
+    height: 350px;
     border-radius: 40px;
     box-shadow: 0 2px 4px #48abe0;
     background-color: #48abe0;
 }
 
-.map button {
+#homeButton{
     color: white;
     border-radius: 5px;
     padding: 5px;
     font-size: 25px;
     height: 60px;
-    width: 400px;
+    width: 350px;
     box-shadow: 0 2px 4px darkslategray;
     cursor: pointer;
     transition: all 0.2s ease;
-}
-
-.map button:active {
-    background-color: lavender;
-    box-shadow: 0 0 2px darkslategray;
-    transform: translateY(2px);
-}	
-
-.map button:not(:first-child) {
     margin-top: 10px;
 }
 
 /* css do Settings.html */
 
-.settings{
+#settingsHead {
+    grid-area: header;
     color: white;
-    display: flex;
-    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    display: flex;
+    padding-top: 10px;
+    font-size: 40px;
 }
 
-.settings label{
-    font-size: 25px;
+.settings{
+    grid-area: main;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 325px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .settings select {
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+    align-items: center;
     font-size: 25px;
-    height: 100px;
-    width: 400px;
+    height: 60px;
+    width: 350px;
     box-shadow: 0 4px 8px darkslategray;
     border-color: #48abe0;
 }
@@ -193,14 +216,13 @@ header {
 .settings button {
     color: white;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     font-size: 25px;
-    height: 100px;
-    width: 400px;
+    height: 60px;
+    width: 350px;
     box-shadow: 0 2px 4px darkslategray;
     cursor: pointer;
     transition: all 0.2s ease;
-    margin-top: 10px;
 }
 
 .settings button:active {
@@ -244,12 +266,11 @@ header {
     border-radius: 5px;
     padding: 5px;
     font-size: 25px;
-    height: 100px;
-    width: 400px;
+    height: 60px;
+    width: 350px;
     box-shadow: 0 2px 4px darkslategray;
     cursor: pointer;
     transition: all 0.2s ease;
-    margin-top: 10px;
 }
 
 .op button:active {
