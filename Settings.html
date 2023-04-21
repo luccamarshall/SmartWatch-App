@@ -12,13 +12,13 @@
     <div class="settings" id="settings">
         <label for="Preferences">Preferences:</label>
         <br>
-        <select name="Preferences" id="Preferences">
-            <option value="None">None</option>
-            <option value="Comida mexicana">Comida Mexicana</option>
-            <option value="Comida italiana">Comida Italiana</option>
-            <option value="Comida japonesa">Comida Japonesa</option>
+        <select name="Preferences" id="Preferences" onchange="saveOption()">
+            <option value="select">Select a food preference</option>
+            <option value="Comida mexicana">Mexican</option>
+            <option value="Comida italiana">Italian</option>
+            <option value="Comida japonesa">Japanese</option>
             <option value="Fast food">Fast Food</option>
-          </select>
+        </select>
         
         <button id="Toggle" type="button">Toggle Light/Dark Mode</button>
         <button id="Redeem code" type="button" onclick="createTextBox()">Redeem Code</button>
@@ -28,26 +28,6 @@
             <button> Home </button>
         </a>
     </div>
-    <script>
-        function createTextBox(){
-            const isShowingText = document.getElementById("text").style.display === 'block';
-            const isShowingRedeem = document.getElementById("redeem").style.display === 'block';
-            if (isShowingText & isShowingRedeem) { 
-                document.getElementById("text").style.display = 'none';
-
-                document.getElementById("redeem").style.display = 'none';
-            } else {
-                document.getElementById("text").style.display = "block";
-
-                document.getElementById("text").style.display = "absolute";
-
-                document.getElementById("redeem").style.display = "block";
-
-                document.getElementById("redeem").style.display = "absolute";
-
-            }
-        }
-    </script>
     <!--
     <script>
          function createTextBox(){
