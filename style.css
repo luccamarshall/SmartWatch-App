@@ -186,6 +186,7 @@ a {
     justify-content: center;
     display: flex;
     padding-top: 30px;
+    
     font-size: 40px;
 }
 
@@ -193,7 +194,7 @@ a {
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    height: 400px;
+    height: 250px;
     width: 450px;
     display: flex;
     flex-direction: column;
