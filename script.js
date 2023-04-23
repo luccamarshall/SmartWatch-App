@@ -4,8 +4,8 @@ function show(clicked_id) {
     const imageId = clicked_id + '1';
 
     const isShowing = document.getElementById(imageId).style.display === 'block';
-    
-    if (isShowing) { 
+
+    if (isShowing) {
         document.getElementById(imageId).style.display = 'none';
     } else {
         document.getElementById(imageId)
@@ -47,6 +47,23 @@ window.onload = function () {
     if (savedOption) {
         document.getElementById("Preferences").value = savedOption;
     }
+    const body = document.querySelector('#size');
+const headers = document.querySelectorAll('header');
+
+// Get saved background color and set it
+const savedBackgroundColor = localStorage.getItem('backgroundColor');
+if (savedBackgroundColor) {
+    body.style.backgroundColor = savedBackgroundColor;
+}
+
+// Get saved header color and set it
+const savedHeaderColor = localStorage.getItem('headerColor');
+if (savedHeaderColor) {
+    headers.forEach(header => {
+        header.style.color = savedHeaderColor;
+    });
+}
+
 };
 
 //Display do SuperOne.html
@@ -110,4 +127,3 @@ function display(){
         document.getElementById("Fruits").style.display = 'block'
     }
 }
-
