@@ -1,4 +1,4 @@
-body{
+body {
     background-color: grey;
 }
 
@@ -7,32 +7,33 @@ body{
     grid-template-rows: auto;
     grid-template-columns: auto;
     grid-template-areas:
-            "header"
-            "main";
+        "header"
+        "main";
     width: 450px;
     height: 425px;
     margin: 70px auto;
     border-radius: 40px;
     background-color: black;
 }
+
 /*css do offers.html*/
 
 #offersHead {
     grid-area: header;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        padding-top: 8px;
-        font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 8px;
+    font-size: 40px;
 }
 
 .offers {
     grid-area: main;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     overflow: auto;
     height: 325px;
     padding-left: 37px;
@@ -106,7 +107,7 @@ a {
     width: 450px;
     display: flex;
     flex-direction: column;
-    align-items: relative;  
+    align-items: relative;
     justify-content: center;
 }
 
@@ -163,7 +164,7 @@ a {
     background-color: #48abe0;
 }
 
-#homeButton{
+#homeButton {
     color: white;
     border-radius: 5px;
     padding: 5px;
@@ -186,11 +187,11 @@ a {
     justify-content: center;
     display: flex;
     padding-top: 30px;
-    
+
     font-size: 40px;
 }
 
-.settings{
+.settings {
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -255,7 +256,7 @@ a {
 
 /* css do Shops.html */
 
-#shopsHead{
+#shopsHead {
     grid-area: header;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -266,7 +267,7 @@ a {
     font-size: 40px;
 }
 
-.op{
+.op {
     grid-area: main;
     color: white;
     display: flex;
@@ -274,7 +275,8 @@ a {
     align-items: center;
     justify-content: center;
 }
-.op button{
+
+.op button {
     color: white;
     border-radius: 5px;
     padding: 5px;
@@ -293,7 +295,7 @@ a {
 }
 
 /* css do restaurants.html */
-.search{
+.search {
     color: black;
     display: flex;
     flex-direction: column;
@@ -301,9 +303,13 @@ a {
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    grid-area: main;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: black;
 }
 
-.search select{
+.search select {
     border-radius: 5px;
     padding: 5px;
     font-size: 25px;
@@ -311,10 +317,9 @@ a {
     width: 400px;
     box-shadow: 0 2px 4px darkslategray;
     border-color: #48abe0;
-
 }
 
-a{
+a {
     color: black;
     font-size: 25px;
     display: flex;
@@ -336,7 +341,7 @@ a{
     font-size: 40px;
 }
 
-.searchSuperOne{
+.searchSuperOne {
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -348,7 +353,7 @@ a{
     align-items: center;
 }
 
-.searchSuperOne select{
+.searchSuperOne select {
     border-radius: 5px;
     padding: 5px;
     font-size: 25px;
@@ -365,7 +370,7 @@ a{
     position: relative;
 }
 
-#text{
+#text {
     color: rgb(173, 150, 150);
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
