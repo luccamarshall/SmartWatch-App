@@ -309,3 +309,55 @@ a{
     align-items: center;
     text-decoration: none;
 }
+
+/* css do SuperOne.html*/
+
+#superOneHead {
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 8px;
+    font-size: 40px;
+}
+
+.searchSuperOne{
+    grid-area: main;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 325px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchSuperOne select{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    height: 100px;
+    width: 400px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-color: #48abe0;
+
+}
+
+.imageTarget {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+#text{
+    color: rgb(173, 150, 150);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 8px;
+    font-size: 40px;
+}
