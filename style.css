@@ -71,7 +71,7 @@ button {
 }
 
 img {
-    width: 390px;
+    width: 365px;
     height: 310px;
     position: absolute;
     top: 5px;
@@ -167,7 +167,6 @@ a {
 #homeButton {
     color: white;
     border-radius: 5px;
-    padding: 5px;
     font-size: 25px;
     height: 60px;
     width: 350px;
@@ -175,6 +174,7 @@ a {
     cursor: pointer;
     transition: all 0.2s ease;
     margin-top: 10px;
+
 }
 
 /* css do Settings.html */
@@ -186,8 +186,6 @@ a {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 30px;
-
     font-size: 40px;
 }
 
@@ -238,8 +236,8 @@ a {
     border-radius: 5px;
     padding: 5px;
     font-size: 25px;
-    height: 90px;
-    width: 385px;
+    height: 60px;
+    width: 350px;
     box-shadow: 0 2px 4px darkslategray;
     border-color: #48abe0;
     margin-top: 10px;
@@ -248,6 +246,10 @@ a {
 
 .settings #text{
     display: none;
+    font-size: 25px;
+    color: black;
+    height: 60px;
+    width: 350px;
 }
 
 #redeem {
@@ -299,6 +301,7 @@ a {
 }
 
 /* css do restaurants.html */
+
 .search {
     grid-area: main;
     border-bottom-right-radius: 25px;
@@ -320,7 +323,8 @@ a {
     border-color: #48abe0;
 }
 
-.search a {
+.searchRes a{
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 30px;
     flex-direction: column;
