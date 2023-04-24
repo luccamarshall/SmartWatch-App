@@ -320,7 +320,7 @@ a {
     border-color: #48abe0;
 }
 
-a {
+.search a {
     color: white;
     font-size: 30px;
     flex-direction: column;
