@@ -151,3 +151,39 @@ function display(){
         document.getElementById("Fruits").style.display = 'block'
     }
 }
+
+function displayRes(){
+    var e = document.getElementById("search");
+    var index = e.selectedIndex;
+    if(index==0){
+        document.getElementById("Mexican").style.display = 'none'
+        document.getElementById("Italian").style.display = 'none'
+        document.getElementById("Japanese").style.display = 'block'
+        document.getElementById("Fast").style.display = 'none'
+    }
+    else if(index==1){
+        document.getElementById("Mexican").style.display = 'block'
+        document.getElementById("Italian").style.display = 'none'
+        document.getElementById("Japanese").style.display = 'none'
+        document.getElementById("Fast").style.display = 'none'
+    }
+    else if(index==2){
+        document.getElementById("Mexican").style.display = 'none'
+        document.getElementById("Italian").style.display = 'block'
+        document.getElementById("Japanese").style.display = 'none'
+        document.getElementById("Fast").style.display = 'none'
+    }
+    else if(index==3){
+        document.getElementById("Mexican").style.display = 'none'
+        document.getElementById("Italian").style.display = 'none'
+        document.getElementById("Japanese").style.display = 'block'
+        document.getElementById("Fast").style.display = 'none'
+    }
+    else if(index==4){
+        document.getElementById("Mexican").style.display = 'none'
+        document.getElementById("Italian").style.display = 'none'
+        document.getElementById("Japanese").style.display = 'none'
+        document.getElementById("Fast").style.display = 'block'
+    }
+}
+
