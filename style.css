@@ -323,9 +323,12 @@ a {
 a {
     color: white;
     font-size: 30px;
-    display: flex;
     flex-direction: column;
     text-decoration: none;
+    position: relative;
+    right: 110px;
+    top: 30px;
+    display: none;
 }
 
 #restaurantHead {
