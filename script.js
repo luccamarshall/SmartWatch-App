@@ -63,8 +63,32 @@ if (savedHeaderColor) {
         header.style.color = savedHeaderColor;
     });
 }
-
 };
+
+function changeColor() {
+    const headers = document.querySelectorAll('header');
+    const body = document.querySelector('#size');
+
+    if (body.style.backgroundColor === 'black') {
+        body.style.backgroundColor = 'white';
+        localStorage.setItem('backgroundColor', 'white');
+    } else {
+        body.style.backgroundColor = 'black';
+        localStorage.setItem('backgroundColor', 'black');
+    }
+
+    if (headers[0].style.color === 'white') {
+        headers.forEach(header => {
+            header.style.color = 'black';
+        });
+        localStorage.setItem('headerColor', 'black');
+    } else {
+        headers.forEach(header => {
+            header.style.color = 'white';
+        });
+        localStorage.setItem('headerColor', 'white');
+    }
+}
 
 //Display do SuperOne.html
 function display(){

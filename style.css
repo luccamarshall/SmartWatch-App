@@ -246,6 +246,10 @@ a {
     display: none;
 }
 
+.settings #text{
+    display: none;
+}
+
 #redeem {
     color: white;
     background-color: #48abe0;
