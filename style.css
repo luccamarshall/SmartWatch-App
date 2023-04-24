@@ -300,17 +300,15 @@ a {
 
 /* css do restaurants.html */
 .search {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-color: black;
+    height: 325px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .search select {
@@ -324,14 +322,25 @@ a {
 }
 
 a {
-    color: black;
-    font-size: 25px;
+    color: white;
+    padding-top: 45px;
+    padding-right: 250px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-decoration: none;
 }
 
+#restaurantHead {
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 8px;
+    font-size: 40px;
+}
 /* css do SuperOne.html*/
 
 #superOneHead {
