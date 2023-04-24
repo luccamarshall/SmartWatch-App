@@ -313,7 +313,6 @@ a {
 
 .search select {
     border-radius: 5px;
-    padding: 5px;
     font-size: 25px;
     height: 100px;
     width: 400px;
@@ -323,8 +322,6 @@ a {
 
 a {
     color: white;
-    padding-top: 45px;
-    padding-right: 250px;
     font-size: 30px;
     display: flex;
     flex-direction: column;
@@ -338,7 +335,6 @@ a {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-top: 8px;
     font-size: 40px;
 }
 /* css do SuperOne.html*/
