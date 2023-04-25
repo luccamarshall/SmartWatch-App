@@ -91,6 +91,7 @@ function changeColor() {
 }
 
 //Display do SuperOne.html
+// por favor usar switch case em vez de if else
 function display(){
     var e = document.getElementById("searchOne");
     var index = e.selectedIndex;
