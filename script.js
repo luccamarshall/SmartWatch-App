@@ -192,3 +192,12 @@ function displayRes(){
     }
 }
 
+window.onload = function loadPreferences() {
+    var savedOption = localStorage.getItem("Preferences");
+    if (savedOption) {
+        document.getElementById("search").value = savedOption;
+    }
+    const body = document.querySelector('#size');
+const headers = document.querySelectorAll('header');
+}
+
