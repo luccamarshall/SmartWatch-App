@@ -5,15 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/639a48792f.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
-        <title>Target</title>
+        <title>Supermarket 1</title>
     </head>
 
     <body>
         <div id = size>
             <header id = "superOneHead">
-                Target
+                <p>Supermarket 1</p> <p id="cartValue">0</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
             </header>
             <div class = searchSuperOne>
                 <select name="searchSuperOne" id="searchOne" onchange="display()">
@@ -24,7 +23,7 @@
                     <option value="Fish">Fish</option>
                     <option value="Vegetables">Vegetables</option>
                     <option value="Fruits">Fruits</option>
-                  </select>
+                </select>
             
 
             <div id="Dairy Products" style="display: none;">
@@ -60,10 +59,24 @@
             <div id="Fruits" style="display: none;">
                 <div class = apple>
                     <img class = "imageTarget" id="imageTarget" src="redApple.jpg" alt="Red apples">
-                    <p id="text">Apples</p>
+                    <p id="appleItem" class="appleItem">Apples</p><p id="price" class="price">2,00</p><p id="text">€/kg</p>
+                    <!-- A TESTAR -->
+                    <div class="inc-button">
+                        <button id="down" onclick=" down('0', 'myNumber')">-</button>
+                        <input type="text" id="myNumber" value="0" />
+                        <button id="up" onclick="up('10', 'myNumber')">+</button>
+                        <!--Tentar adicionar macas, nao esta a resultar-->
+                        <button onclick="addItem('appleItem', 'price', 'myNumber')">Add</button>
+
+                    </div>
+
+                    <!-- FIM DO TESTE -->
                 </div>
             </div>
         </div>
         </div>
     </body>
+    <a href="home.html">
+        <button id="homeButton"> Home </button>
+    </a>
 </html>

@@ -345,7 +345,32 @@ a {
     font-size: 40px;
     padding-top: 20px;
 }
+
+/* css do Supermarket.html */
+
+#supermarketHead {
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.availableSupers a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    flex-direction: column;
+    text-decoration: none;
+    right: 110px;
+    top: 30px;
+}
+
 /* css do SuperOne.html*/
+
 
 #superOneHead {
     grid-area: header;
@@ -396,13 +421,30 @@ a {
     bottom: 60px;
 }
 
+.inc-button{
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
 #text {
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+#cartValue{
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+#shoppingCart{
+    width: 20px;
+    height: 20px;
+    position: relative;
 }
 
 /* css do Restaurant1.html*/
@@ -422,4 +464,16 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     padding-left: 20px;
+}
+
+/* css do shoppingCart.html */
+
+#shoppingCartHeader{
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    display: flex; 
+    padding-top: 20px;
 }
