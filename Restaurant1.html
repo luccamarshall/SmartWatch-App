@@ -11,9 +11,10 @@
 <div id="size">
     <header id="Restaurant1Header">
         Restaurant 1 <br> 1 km
+        <p id="cartValue">0</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
     </header>
     <body id="Res1Body">
-        <p>Gnocchi Marinara - 7.95€ / porção</p>
+        <p id="Gnocchi Marinara">Gnocchi Marinara - 7.95€ / porção</p>
         <div class="input-group">
 
             <button id="down" class="btn btn-default" onclick=" down('0', 'myNumber')">-</button>
@@ -22,8 +23,9 @@
 
             <button id="up" class="btn btn-default" onclick="up('10', 'myNumber')">+</button>
 
+            <button onclick="addItem('Gnocchi Marinara', 'price', 'myNumber')">Add</button>
         </div>
-        <p>Lasagna - 9.00€ / porção</p>
+        <p id="Lasagna">Lasagna - 9.00€ / porção</p>
         <div class="input-group">
 
             <button id="down2" class="btn btn-default" onclick=" down('0', 'myNumber2')">-</button>
@@ -31,6 +33,8 @@
             <input type="text" id="myNumber2" class="form-control input-number" value="0" />
 
             <button id="up2" class="btn btn-default" onclick="up('10', 'myNumber2')">+</button>
+            
+            <button onclick="addItem('Lasagna', 'price', 'myNumber')">Add</button>
 
         </div>
     </body>
