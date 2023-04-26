@@ -94,97 +94,101 @@ function changeColor() {
 // por favor usar switch case em vez de if else
 function display(){
     var e = document.getElementById("searchOne");
-    var index = e.selectedIndex;
-    if(index==0){
-        document.getElementById("Dairy Products").style.display = 'none'
-        document.getElementById("Bakery").style.display = 'none'
-        document.getElementById("Meat").style.display = 'none'
-        document.getElementById("Fish").style.display = 'none'
-        document.getElementById("Vegetables").style.display = 'none'
-        document.getElementById("Fruits").style.display = 'none'
-    }
-    else if(index==1){
-        document.getElementById("Dairy Products").style.display = 'block'
-        document.getElementById("Bakery").style.display = 'none'
-        document.getElementById("Meat").style.display = 'none'
-        document.getElementById("Fish").style.display = 'none'
-        document.getElementById("Vegetables").style.display = 'none'
-        document.getElementById("Fruits").style.display = 'none'
-    }
-    else if(index==2){
-        document.getElementById("Dairy Products").style.display = 'none'
-        document.getElementById("Bakery").style.display = 'block'
-        document.getElementById("Meat").style.display = 'none'
-        document.getElementById("Fish").style.display = 'none'
-        document.getElementById("Vegetables").style.display = 'none'
-        document.getElementById("Fruits").style.display = 'none'
-    }
-    else if(index==3){
-        document.getElementById("Dairy Products").style.display = 'none'
-        document.getElementById("Bakery").style.display = 'none'
-        document.getElementById("Meat").style.display = 'block'
-        document.getElementById("Fish").style.display = 'none'
-        document.getElementById("Vegetables").style.display = 'none'
-        document.getElementById("Fruits").style.display = 'none'
-    }
-    else if(index==4){
-        document.getElementById("Dairy Products").style.display = 'none'
-        document.getElementById("Bakery").style.display = 'none'
-        document.getElementById("Meat").style.display = 'none'
-        document.getElementById("Fish").style.display = 'block'
-        document.getElementById("Vegetables").style.display = 'none'
-        document.getElementById("Fruits").style.display = 'none'
-    }
-    else if(index==5){
-        document.getElementById("Dairy Products").style.display = 'none'
-        document.getElementById("Bakery").style.display = 'none'
-        document.getElementById("Meat").style.display = 'none'
-        document.getElementById("Fish").style.display = 'none'
-        document.getElementById("Vegetables").style.display = 'block'
-        document.getElementById("Fruits").style.display = 'none'
-    }
-    else if(index==6){
-        document.getElementById("Dairy Products").style.display = 'none'
-        document.getElementById("Bakery").style.display = 'none'
-        document.getElementById("Meat").style.display = 'none'
-        document.getElementById("Fish").style.display = 'none'
-        document.getElementById("Vegetables").style.display = 'none'
-        document.getElementById("Fruits").style.display = 'block'
+    switch (e.selectedIndex) {
+        case 0:
+            document.getElementById("Dairy Products").style.display = 'none'
+            document.getElementById("Bakery").style.display = 'none'
+            document.getElementById("Meat").style.display = 'none'
+            document.getElementById("Fish").style.display = 'none'
+            document.getElementById("Vegetables").style.display = 'none'
+            document.getElementById("Fruits").style.display = 'none'
+            break;
+    
+        case 1:
+            document.getElementById("Dairy Products").style.display = 'block'
+            document.getElementById("Bakery").style.display = 'none'
+            document.getElementById("Meat").style.display = 'none'
+            document.getElementById("Fish").style.display = 'none'
+            document.getElementById("Vegetables").style.display = 'none'
+            document.getElementById("Fruits").style.display = 'none'
+            break;
+        case 2:
+            document.getElementById("Dairy Products").style.display = 'none'
+            document.getElementById("Bakery").style.display = 'block'
+            document.getElementById("Meat").style.display = 'none'
+            document.getElementById("Fish").style.display = 'none'
+            document.getElementById("Vegetables").style.display = 'none'
+            document.getElementById("Fruits").style.display = 'none'
+            break;
+        case 3:
+            document.getElementById("Dairy Products").style.display = 'none'
+            document.getElementById("Bakery").style.display = 'none'
+            document.getElementById("Meat").style.display = 'block'
+            document.getElementById("Fish").style.display = 'none'
+            document.getElementById("Vegetables").style.display = 'none'
+            document.getElementById("Fruits").style.display = 'none'
+            break;
+        case 4:
+            document.getElementById("Dairy Products").style.display = 'none'
+            document.getElementById("Bakery").style.display = 'none'
+            document.getElementById("Meat").style.display = 'none'
+            document.getElementById("Fish").style.display = 'block'
+            document.getElementById("Vegetables").style.display = 'none'
+            document.getElementById("Fruits").style.display = 'none'
+            break;
+        case 5:
+            document.getElementById("Dairy Products").style.display = 'none'
+            document.getElementById("Bakery").style.display = 'none'
+            document.getElementById("Meat").style.display = 'none'
+            document.getElementById("Fish").style.display = 'none'
+            document.getElementById("Vegetables").style.display = 'block'
+            document.getElementById("Fruits").style.display = 'none'
+            break;
+        case 6:
+            document.getElementById("Dairy Products").style.display = 'none'
+            document.getElementById("Bakery").style.display = 'none'
+            document.getElementById("Meat").style.display = 'none'
+            document.getElementById("Fish").style.display = 'none'
+            document.getElementById("Vegetables").style.display = 'none'
+            document.getElementById("Fruits").style.display = 'block'
+            break;
     }
 }
 
 function displayRes(){
     var e = document.getElementById("search");
-    var index = e.selectedIndex;
-    if(index==0){
-        document.getElementById("Mexican").style.display = 'none'
-        document.getElementById("Italian").style.display = 'none'
-        document.getElementById("Japanese").style.display = 'block'
-        document.getElementById("Fast").style.display = 'none'
-    }
-    else if(index==1){
-        document.getElementById("Mexican").style.display = 'block'
-        document.getElementById("Italian").style.display = 'none'
-        document.getElementById("Japanese").style.display = 'none'
-        document.getElementById("Fast").style.display = 'none'
-    }
-    else if(index==2){
-        document.getElementById("Mexican").style.display = 'none'
-        document.getElementById("Italian").style.display = 'block'
-        document.getElementById("Japanese").style.display = 'none'
-        document.getElementById("Fast").style.display = 'none'
-    }
-    else if(index==3){
-        document.getElementById("Mexican").style.display = 'none'
-        document.getElementById("Italian").style.display = 'none'
-        document.getElementById("Japanese").style.display = 'block'
-        document.getElementById("Fast").style.display = 'none'
-    }
-    else if(index==4){
-        document.getElementById("Mexican").style.display = 'none'
-        document.getElementById("Italian").style.display = 'none'
-        document.getElementById("Japanese").style.display = 'none'
-        document.getElementById("Fast").style.display = 'block'
+    switch (e.selectedIndex) {
+        case 0:
+            document.getElementById("Mexican").style.display = 'none'
+            document.getElementById("Italian").style.display = 'none'
+            document.getElementById("Japanese").style.display = 'block'
+            document.getElementById("Fast").style.display = 'none'
+            break;
+    
+        case 1:
+            document.getElementById("Mexican").style.display = 'block'
+            document.getElementById("Italian").style.display = 'none'
+            document.getElementById("Japanese").style.display = 'none'
+            document.getElementById("Fast").style.display = 'none'
+            break;
+        case 2:
+            document.getElementById("Mexican").style.display = 'none'
+            document.getElementById("Italian").style.display = 'block'
+            document.getElementById("Japanese").style.display = 'none'
+            document.getElementById("Fast").style.display = 'none'
+            break;
+        case 3:
+            document.getElementById("Mexican").style.display = 'none'
+            document.getElementById("Italian").style.display = 'none'
+            document.getElementById("Japanese").style.display = 'block'
+            document.getElementById("Fast").style.display = 'none'
+            break;
+        case 4:
+            document.getElementById("Mexican").style.display = 'none'
+            document.getElementById("Italian").style.display = 'none'
+            document.getElementById("Japanese").style.display = 'none'
+            document.getElementById("Fast").style.display = 'block'
+            break;
     }
 }
 
