@@ -218,123 +218,97 @@ function down(min, id) {
 //document.querySelector("#addToCart").addEventListener("click", addItem);
 
 function addItem(product, price, quantity) {
-	// Get the form inputs
-	var product = document.getElementById("product").value;
-	var price = document.getElementById("price").value;
-	var quantity = document.getElementById("quantity").value;
-    console.log(product);
 
-	// Calculate the total
-	var total = price * quantity;
+    var product1 = document.getElementById(product).value;
+    var price1 = document.getElementById(price).value;
+    var quantity1 = document.getElementById(quantity).value;
 
-	// Create an object for the new item
-	var newItem = { product: product, price: price, quantity: quantity, total: total };
+	var total = price1 * quantity1;
 
-	// Get the existing cart data from local storage, or initialize it if it doesn't exist
-	var cart = JSON.parse(localStorage.getItem("cart")) || [];
+	var newItem = { product: product1, price: price1, quantity: quantity1, total: total };
 
-	// Check if the item already exists in the cart
+	var cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
 	var itemIndex = -1;
 	for (var i = 0; i < cart.length; i++) {
-		if (cart[i].product === product) {
+		if (cart[i].product === product1) {
 			itemIndex = i;
 			break;
 		}
 	}
 
 	if (itemIndex >= 0) {
-		// Item already exists in the cart, update the quantity and total
-		cart[itemIndex].quantity += quantity;
+		cart[itemIndex].quantity += quantity1;
 		cart[itemIndex].total += total;
 	} else {
-		// Item doesn't exist in the cart, add it to the end
 		cart.push(newItem);
 	}
 
-	// Save the updated cart data to local storage
-	localStorage.setItem("cart", JSON.stringify(cart));
+    sessionStorage.setItem("cart", JSON.stringify(cart));
 
-	// Refresh the cart table
 	refreshCart();
 }
 
 function loadCart() {
-    // Retrieve the cart data from localStorage
-    var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // Get the ul element to display the cart items
+    var cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
     var cartList = document.getElementById("cart-list");
 
-    // Loop through each item in the cart and display it
     for (var i = 0; i < cart.length; i++) {
         var item = cart[i];
 
-        // Create a new li element to display the item
         var li = document.createElement("li");
         var text = document.createTextNode(item.product + " - $" + item.price + " x " + item.quantity);
         li.appendChild(text);
 
-        // Add the li element to the ul element
         cartList.appendChild(li);
     }
 }
 
 function refreshCart() {
-	// Get the cart data from local storage
-	var cart = JSON.parse(localStorage.getItem("cart")) || [];
+	var cart = JSON.parse(sessionStorage.getItem("cart")) || [];
 
-	// Get the cart table element
 	var cartTable = document.getElementById("cart");
 
-	// Clear the existing rows from the table
 	cartTable.innerHTML = "";
 
-	// Create a new row for each item in the cart
 	for (var i = 0; i < cart.length; i++) {
-		// Create a new row for the item
 		var row = document.createElement("tr");
 
-		// Create the cells for the row
 		var productCell = document.createElement("td");
 		var priceCell = document.createElement("td");
 		var quantityCell = document.createElement("td");
 		var totalCell = document.createElement("td");
 
-		// Create the input field for the quantity
 		var quantityInput = document.createElement("input");
 		quantityInput.type = "number";
 		quantityInput.value = cart[i].quantity;
 		quantityInput.min = 1;
 		quantityInput.addEventListener("change", function() {
-			// Update the quantity and total when the input field changes
 			var newQuantity = parseInt(this.value);
 			var newTotal = cart[i].price * newQuantity;
 			cart[i].quantity = newQuantity;
 			cart[i].total = newTotal;
-			localStorage.setItem("cart", JSON.stringify(cart));
+			sessionStorage.setItem("cart", JSON.stringify(cart));
 			refreshCart();
 		});
 
-		// Set the cell values
 		productCell.textContent = cart[i].product;
 		priceCell.textContent = cart[i].price;
 		totalCell.textContent = cart[i].total;
 
-		// Add the cells to the row
 		row.appendChild(productCell);
 		row.appendChild(priceCell);
 		row.appendChild(quantityCell);
 		row.appendChild(totalCell);
 
-		// Add the quantity input field to the quantity cell
 		quantityCell.appendChild(quantityInput);
 
-		// Add the row to the cart table
 		cartTable.appendChild(row);
 	}
 }
 
-// Call refreshCart when the page is loaded
 window.addEventListener("load", refreshCart);
 
 //FIM DO TESTE
