@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Document</title>
+    </head>
+    <div id="size">
+        <header id="Restaurant3Header">
+            Restaurant 3 <br> 200 m
+            <p id="cartValue">0</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
+        </header>
+        <body id="Res3Body">
+            <p id="Tako Yaki">Tako Yaki - 5.50€ / porção</p>
+            <div class="input-group">
+    
+                <button id="down" class="btn btn-default" onclick=" down('0', 'myNumber')">-</button>
+    
+                <input type="text" id="myNumber" class="form-control input-number" value="0" />
+    
+                <button id="up" class="btn btn-default" onclick="up('10', 'myNumber')">+</button>
+    
+                <button onclick="addItem('Tako Yaki', 'price', 'myNumber')">Add</button>
+            </div>
+            <p id="Ramen">Ramen - 10.00€ / porção</p>
+            <div class="input-group">
+    
+                <button id="down2" class="btn btn-default" onclick=" down('0', 'myNumber2')">-</button>
+    
+                <input type="text" id="myNumber2" class="form-control input-number" value="0" />
+    
+                <button id="up2" class="btn btn-default" onclick="up('10', 'myNumber2')">+</button>
+                
+                <button onclick="addItem('Ramen', 'price', 'myNumber')">Add</button>
+    
+            </div>
+        </body>
+    </div>
+</html>

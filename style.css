@@ -466,6 +466,60 @@ a {
     padding-left: 20px;
 }
 
+/* css do Restaurant2.html*/
+#Restaurant2Header{
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    display: flex; 
+    padding-top: 20px;
+}
+
+#Res2Body p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+/* css do Restaurant3.html*/
+#Restaurant3Header{
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    display: flex; 
+    padding-top: 20px;
+}
+
+#Res3Body p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+/* css do Restaurant4.html*/
+#Restaurant4Header{
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    display: flex; 
+    padding-top: 20px;
+}
+
+#Res4Body p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
 /* css do shoppingCart.html */
 
 #shoppingCartHeader{
