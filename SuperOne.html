@@ -12,7 +12,7 @@
     <body>
         <div id = size>
             <header id = "superOneHead">
-                <p>Supermarket 1</p> <p id="cartValue">0</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
+                <p>Supermarket 1</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
             </header>
             <div class = searchSuperOne>
                 <select name="searchSuperOne" id="searchOne" onchange="display()">
@@ -65,7 +65,7 @@
                         <button id="down" onclick=" down('0', 'myNumber')">-</button>
                         <input type="text" id="myNumber" value="0" />
                         <button id="up" onclick="up('10', 'myNumber')">+</button>
-                        <button onclick="addItem('appleItem', 'price', 'myNumber')">Add</button>
+                        <button onclick="addItem('appleItem', 'price', 'myNumber')" id="add">Add</button>
 
                     </div>
 
