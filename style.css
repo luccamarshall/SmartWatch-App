@@ -308,9 +308,8 @@ a {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     height: 325px;
-    width: 450px;
+    padding-left: 20px;
     overflow: auto;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -333,8 +332,7 @@ a {
     flex-direction: column;
     text-decoration: none;
     position: relative;
-    right: 110px;
-    top: 30px;
+    top: 10px;
     display: none;
 }
 
@@ -346,7 +344,7 @@ a {
     justify-content: center;
     display: flex;
     font-size: 40px;
-    padding-top: 40px;
+    padding-top: 8px;
 }
 
 /* css do Supermarket.html */
@@ -360,6 +358,19 @@ a {
     display: flex;
     font-size: 40px;
     padding-top: 20px;
+}
+
+.availableSupers{
+    grid-area: main;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 325px;
+    padding-left: 20px;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
 .availableSupers a{

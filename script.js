@@ -1,3 +1,33 @@
+window.onload = function () {
+    main();
+};
+
+main = function () {
+    var savedOption = localStorage.getItem("Preferences");
+    if (savedOption) {
+        document.getElementById("Preferences").value = savedOption;
+    }
+    const body = document.querySelector('#size');
+    const headers = document.querySelectorAll('header');
+
+    // Get saved background color and set it
+    const savedBackgroundColor = localStorage.getItem('backgroundColor');
+    if (savedBackgroundColor) {
+        body.style.backgroundColor = savedBackgroundColor;
+    }
+
+    // Get saved header color and set it
+    const savedHeaderColor = localStorage.getItem('headerColor');
+    if (savedHeaderColor) {
+        headers.forEach(header => {
+            header.style.color = savedHeaderColor;
+        });
+    }
+    var savedOption = localStorage.getItem("Preferences");
+    if (savedOption) {
+        document.getElementById("Preferences").value = savedOption;
+    }
+}
 
 function show(clicked_id) {
 
@@ -41,29 +71,6 @@ function saveOption() {
     localStorage.setItem("Preferences", selectedOption);
 }
 
-// Load saved option on page load
-window.onload = function () {
-    var savedOption = localStorage.getItem("Preferences");
-    if (savedOption) {
-        document.getElementById("Preferences").value = savedOption;
-    }
-    const body = document.querySelector('#size');
-const headers = document.querySelectorAll('header');
-
-// Get saved background color and set it
-const savedBackgroundColor = localStorage.getItem('backgroundColor');
-if (savedBackgroundColor) {
-    body.style.backgroundColor = savedBackgroundColor;
-}
-
-// Get saved header color and set it
-const savedHeaderColor = localStorage.getItem('headerColor');
-if (savedHeaderColor) {
-    headers.forEach(header => {
-        header.style.color = savedHeaderColor;
-    });
-}
-};
 
 function changeColor() {
     const headers = document.querySelectorAll('header');
@@ -192,15 +199,6 @@ function displayRes(){
     }
 }
 
-window.onload = function loadPreferences() {
-    var savedOption = localStorage.getItem("Preferences");
-    if (savedOption) {
-        document.getElementById("search").value = savedOption;
-    }
-    const body = document.querySelector('#size');
-const headers = document.querySelectorAll('header');
-}
-
 function up(max, id) {
     document.getElementById(id).value = parseInt(document.getElementById(id).value) + 1;
     if (document.getElementById(id).value >= parseInt(max)) {
@@ -214,10 +212,7 @@ function down(min, id) {
     }
 }
 
-//A TESTAR
-//document.querySelector("#addToCart").addEventListener("click", addItem);
-
-function addItem(product, price, quantity) {
+/*function addItem(product, price, quantity) {
 
     var product1 = document.getElementById(product).value;
     var price1 = document.getElementById(price).value;
@@ -313,3 +308,4 @@ window.addEventListener("load", refreshCart);
 
 //FIM DO TESTE
 
+*/
