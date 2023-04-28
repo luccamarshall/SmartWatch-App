@@ -309,6 +309,7 @@ a {
     border-bottom-left-radius: 25px;
     height: 325px;
     width: 450px;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -159,10 +159,10 @@ function displayRes(){
     var e = document.getElementById("search");
     switch (e.selectedIndex) {
         case 0:
-            document.getElementById("Mexican").style.display = 'none'
-            document.getElementById("Italian").style.display = 'none'
+            document.getElementById("Mexican").style.display = 'block'
+            document.getElementById("Italian").style.display = 'block'
             document.getElementById("Japanese").style.display = 'block'
-            document.getElementById("Fast").style.display = 'none'
+            document.getElementById("Fast").style.display = 'block'
             break;
     
         case 1:
