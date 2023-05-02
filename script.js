@@ -97,71 +97,6 @@ function changeColor() {
     }
 }
 
-//Display do SuperOne.html
-// por favor usar switch case em vez de if else
-function display(){
-    var e = document.getElementById("searchOne");
-    switch (e.selectedIndex) {
-        case 0:
-            document.getElementById("Dairy Products").style.display = 'none'
-            document.getElementById("Bakery").style.display = 'none'
-            document.getElementById("Meat").style.display = 'none'
-            document.getElementById("Fish").style.display = 'none'
-            document.getElementById("Vegetables").style.display = 'none'
-            document.getElementById("Fruits").style.display = 'none'
-            break;
-    
-        case 1:
-            document.getElementById("Dairy Products").style.display = 'block'
-            document.getElementById("Bakery").style.display = 'none'
-            document.getElementById("Meat").style.display = 'none'
-            document.getElementById("Fish").style.display = 'none'
-            document.getElementById("Vegetables").style.display = 'none'
-            document.getElementById("Fruits").style.display = 'none'
-            break;
-        case 2:
-            document.getElementById("Dairy Products").style.display = 'none'
-            document.getElementById("Bakery").style.display = 'block'
-            document.getElementById("Meat").style.display = 'none'
-            document.getElementById("Fish").style.display = 'none'
-            document.getElementById("Vegetables").style.display = 'none'
-            document.getElementById("Fruits").style.display = 'none'
-            break;
-        case 3:
-            document.getElementById("Dairy Products").style.display = 'none'
-            document.getElementById("Bakery").style.display = 'none'
-            document.getElementById("Meat").style.display = 'block'
-            document.getElementById("Fish").style.display = 'none'
-            document.getElementById("Vegetables").style.display = 'none'
-            document.getElementById("Fruits").style.display = 'none'
-            break;
-        case 4:
-            document.getElementById("Dairy Products").style.display = 'none'
-            document.getElementById("Bakery").style.display = 'none'
-            document.getElementById("Meat").style.display = 'none'
-            document.getElementById("Fish").style.display = 'block'
-            document.getElementById("Vegetables").style.display = 'none'
-            document.getElementById("Fruits").style.display = 'none'
-            break;
-        case 5:
-            document.getElementById("Dairy Products").style.display = 'none'
-            document.getElementById("Bakery").style.display = 'none'
-            document.getElementById("Meat").style.display = 'none'
-            document.getElementById("Fish").style.display = 'none'
-            document.getElementById("Vegetables").style.display = 'block'
-            document.getElementById("Fruits").style.display = 'none'
-            break;
-        case 6:
-            document.getElementById("Dairy Products").style.display = 'none'
-            document.getElementById("Bakery").style.display = 'none'
-            document.getElementById("Meat").style.display = 'none'
-            document.getElementById("Fish").style.display = 'none'
-            document.getElementById("Vegetables").style.display = 'none'
-            document.getElementById("Fruits").style.display = 'block'
-            break;
-    }
-}
-
 function displayRes(){
     var e = document.getElementById("search");
     switch (e.selectedIndex) {
@@ -212,40 +147,5 @@ function down(min, id) {
     }
 }
 
-function loadCart() {
-    let cart = localStorage.getItem('cart');
-    if (cart === null) {
-        cart = [];
-    } else {
-        cart = JSON.parse(cart);
-    }
-
-    let total = 0;
-    for (let i = 0; i < cart.length; i++) {
-        let item = cart[i];
-        total += item.price * item.quantity;
-    }
-
-    document.append(total);
-}
-
-function addToCart(id, price, quantity) {
-    let cart = localStorage.getItem('cart');
-    if (cart === null) {
-        cart = [];
-    } else {
-        cart = JSON.parse(cart);
-    }
-
-    let item = {
-        id: id,
-        price: price,
-        quantity: quantity
-    }
-
-    cart.push(item);
-    localStorage.setItem('cart', JSON.stringify(cart));
 
 
-
-}
