@@ -699,7 +699,7 @@ a {
     padding-top: 20px;
 }
 
-/* css do shoppingCart.html */
+/* css do Pagamento.html */
 #pagamentoHeader{
     grid-area: header;
     color: white;
@@ -708,4 +708,33 @@ a {
     justify-content: center;
     display: flex; 
     padding-top: 20px;
+}
+
+#metodosPagamento{
+    display: flex;
+    justify-content: center;
+}
+
+#metodosPagamento button{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    height: 200px;
+    margin-top: 10px;
+    width: 200px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+}
+
+#metodosPagamento button:active{
+    top: 40px;
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}
+
+#metodosPagamento i{
+    font-size: 100px;
 }
