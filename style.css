@@ -416,7 +416,6 @@ a {
     box-shadow: 0 2px 4px darkslategray;
     cursor: pointer;
     transition: all 0.2s ease;
-    
 }
 
 .availableSupers button:active {
@@ -691,6 +690,17 @@ a {
 /* css do shoppingCart.html */
 
 #shoppingCartHeader{
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    display: flex; 
+    padding-top: 20px;
+}
+
+/* css do shoppingCart.html */
+#pagamentoHeader{
     grid-area: header;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
