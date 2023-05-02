@@ -325,7 +325,7 @@ a {
     border-color: #48abe0;
 }
 
-.searchRes a{
+/*.searchRes a{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 30px;
@@ -334,6 +334,27 @@ a {
     position: relative;
     top: 10px;
     display: none;
+}*/
+
+.searchRes button {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    height: 70px;
+    margin-top: 10px;
+    width: 350px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 20px;
+}
+
+.searchRes button:active {
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
 }
 
 #restaurantHead {
@@ -373,7 +394,7 @@ a {
     padding-bottom: 40px;
 }
 
-.availableSupers a{
+/*.availableSupers a{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 30px;
@@ -381,6 +402,27 @@ a {
     text-decoration: none;
     right: 110px;
     top: 30px;
+}*/
+
+.availableSupers button{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    height: 70px;
+    margin-top: 10px;
+    width: 350px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+}
+
+.availableSupers button:active {
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
 }
 
 /* css do SuperOne.html*/
