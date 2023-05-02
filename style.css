@@ -720,12 +720,20 @@ a {
     padding: 10px;
     font-size: 25px;
     height: 200px;
-    margin-top: 10px;
     width: 200px;
     box-shadow: 0 2px 4px darkslategray;
     cursor: pointer;
     transition: all 0.2s ease;
     
+}
+
+#button-wrapper p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
 }
 
 #metodosPagamento button:active{
