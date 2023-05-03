@@ -764,3 +764,28 @@ a {
     left: 117px;
     position: relative;
 }
+
+#nextPageText{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#next{
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 60px;
+    width: 350px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
