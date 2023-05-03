@@ -147,5 +147,10 @@ function down(min, id) {
     }
 }
 
-
+function getPreferences(){
+    var savedOption = localStorage.getItem("Preferences");
+    if (savedOption) {
+        document.getElementById("search").value = savedOption;
+    }
+}
 

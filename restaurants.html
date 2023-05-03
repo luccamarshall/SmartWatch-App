@@ -14,7 +14,7 @@
     </header>
     <body>
         <div class="search">
-            <select name="search" id="search" onchange="displayRes()" >
+            <select id="search" onchange="displayRes()" >
                 <option value="select">None</option>
                 <option value="Comida mexicana">Mexican</option>
                 <option value="Comida italiana">Italian</option>
@@ -31,6 +31,10 @@
         </div>
     </body>
 </div>
+<script>
+document.getElementById("search").addEventListener("load", getPreferences());
+document.getElementById("search").addEventListener("load", displayRes());
+</script>
 <a href="home.html">
     <button id="homeButton"> Home </button>
 </a>
