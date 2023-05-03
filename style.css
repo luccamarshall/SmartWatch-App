@@ -177,6 +177,142 @@ a {
 
 }
 
+/* css das setas para voltar atrás */
+#backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 75px;
+    background-color: #48abe0;
+}
+
+#offersHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 105px;
+}
+
+#restaurantHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 63px;
+}
+
+#Restaurant1Header #backArrow{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant2Header #backArrow{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant3Header #backArrow{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant4Header #backArrow{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#shopsHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 89px;
+}
+
+#supermarketHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 19px;
+}
+
+#nearmeHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 101px;
+}
+
 /* css do Settings.html */
 
 #settingsHead {
@@ -258,6 +394,7 @@ a {
     box-shadow: 0 2px 4px darkslategray;
     border-color: #48abe0;
     display: none;
+    cursor: pointer;
 }
 
 /* css do Shops.html */
@@ -304,6 +441,7 @@ a {
 /* css do restaurants.html */
 
 .search {
+    /*
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -313,7 +451,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 40px; */
+
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: 325px;
+    padding-left: 27px;
 }
 
 .search select {
@@ -381,7 +527,27 @@ a {
     padding-top: 20px;
 }
 
+.searchSuperOne{
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: 325px;
+    padding-left: 27px;
+}
+
 .availableSupers{
+    
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: 325px;
+    padding-left: 27px;
+    
+    /*
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -391,7 +557,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 40px; */
 }
 
 /*.availableSupers a{
@@ -615,6 +781,7 @@ a {
     position: relative;
     left: 40px;
 }
+
 /* css do Restaurant1.html*/
 
 #Restaurant1Header{
@@ -631,7 +798,7 @@ a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* css do Restaurant2.html*/
@@ -649,7 +816,7 @@ a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* css do Restaurant3.html*/
@@ -667,7 +834,7 @@ a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* css do Restaurant4.html*/
@@ -685,7 +852,7 @@ a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* css do shoppingCart.html */
