@@ -801,3 +801,18 @@ a {
     padding-top: 20px;
     text-align: center;
 }
+
+#QRfinal{
+    width: 200px;
+    height: 200px;
+    left: 117px;
+    position: relative;
+}
+
+#transfer{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
+    text-align: center;
+}
