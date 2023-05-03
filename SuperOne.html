@@ -15,20 +15,21 @@
                 <p>Supermarket 1</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
             </header>
             <div class = searchSuperOne>
-                <select id="searchOne" onchange="display()">
+                <select id="searchOne">
                     <option value="Type of food" selected="selected">Type of food</option>
                     <option value="Dairy Products">Dairy Products</option>
                     <option value="Bakery">Bakery</option>
                     <option value="Meat">Meat</option>
                     <option value="Fish">Fish</option>
                     <option value="Vegetables">Vegetables</option>
-                    <option value="Fruits">Fruits</option>
+                    <option id= "0" value="Fruits" onclick ="renderProducts(this.id)">Fruits</option>
                 </select>
-            </div>
+            
             
             <div id ="products">
                     <!---renderProducts-->
             </div>
+        </div>
         </div>
         <script src = scriptSupermarket.js></script>
     </body>

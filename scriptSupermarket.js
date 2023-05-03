@@ -1,31 +1,29 @@
 const Products = {
     id: 0,
     name: "apple",
-    price: "2,99€ ao kilo",
+    price: "2,99€ per kilo",
     imgSrc: "redApple.jpg",
-}
+};
 
-const productsEl = document.querySelector(".products");
+const products = [Products]; // Define an array of products
 
-function renderProducts() {
-    products.forEach((products) => {
-        productsEl.innerHTML += `<div id="Fruits" style="display: none;">
-                <div class = apple>
-                    <img class = "imageTarget" id="imageTarget" src="redApple.jpg" alt="Red apples">
-                    <p id="appleItem" class="appleItem">Apples</p><p id="price" class="price">2,00 €/kg</p>
-                    <!-- A TESTAR -->
-                    <div class="inc-button">
-                        <button id="down" onclick=" down('0', 'quantity')">-</button>
-                        <input type="text" id="quantity" value="0" />
-                        <button id="up" onclick="up('10', 'quantity')">+</button>
-                        <button onclick="addToCart('appleItem', document.getElementById(price), document.getElementById(quantity))"" id="add">Add</button>
+const productsEl = document.querySelector("#products");
 
-                    </div>
-
-                    <!-- FIM DO TESTE -->
-                </div>
-            </div>`
-    });
+function renderProducts(id) {
+    const product = products[id];
+        productsEl.innerHTML += `<div class="product ${product.name}">
+      <div class="apple">
+        <img class="imageTarget" id="imageTarget" src="${product.imgSrc}" alt="${product.name}">
+        <p id="appleItem" class="appleItem">${product.name}</p>
+        <p id="price" class="price">${product.price}</p>
+        <div class="inc-button">
+          <button id="down" onclick="down('0', 'quantity')">-</button>
+          <input type="text" id="quantity" value="0" />
+          <button id="up" onclick="up('10', 'quantity')">+</button>
+          <button onclick="addToCart('appleItem', document.getElementById('price'), document.getElementById('quantity'))" id="add">Add</button>
+        </div>
+      </div>
+    </div>`;
 }
 
 renderProducts();
