@@ -809,10 +809,29 @@ a {
     position: relative;
 }
 
-#transfer{
+#transferButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#transferButton  button{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 10px;
     font-size: 25px;
-    padding-left: 20px;
-    text-align: center;
+    height: 70px;
+    margin-top: 10px;
+    width: 350px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#transferButton  button:active{
+    top: 40px;
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
 }
