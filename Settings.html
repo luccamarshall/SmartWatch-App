@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/639a48792f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title></title>
 </head>
 <body>
     <div id = "size">
+        
         <header id = "settingsHead">
+            <a href="home.html" ><i id = "backArrow" class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
             Settings 
         </header>
+        
         <div class="settings" id="settings">
             <select id="Preferences" onchange="saveOption()">
                 <option value="select">Select a food preference</option>
@@ -25,7 +29,7 @@
             <button id="Toggle" onclick="changeColor()">Toggle Light/Dark Mode</button>
             <button id="Redeem code" onclick="createTextBox()">Redeem Code</button>
             <input type="text" value="Insert code" id="text">
-            <input type="submit" value="Redeem" id="redeem">
+            <input type="button" value="Redeem" id="redeem" onclick="window.location='QRcode.html';">
         </div> 
     </div>
     <a href="home.html">

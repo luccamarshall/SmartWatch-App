@@ -189,6 +189,104 @@ a {
     font-size: 40px;
 }
 
+#backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 75px;
+    /*padding-right: ;
+    /*width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: left;
+    left: 0px;*/
+}
+
+#offersHead #backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 111px;
+}
+
+#restaurantHead #backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 70px;
+}
+
+#Restaurant1Header #backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant2Header #backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant3Header #backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant4Header #backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#shopsHead #backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 98px;
+}
+
+#supermarketHead #backArrow{
+    font-size: 40px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 32px;
+}
+
+#nearmeHead #backArrow{
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 111px;
+}
+
 .settings {
     grid-area: main;
     border-bottom-right-radius: 25px;
@@ -304,6 +402,7 @@ a {
 /* css do restaurants.html */
 
 .search {
+    /*
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -313,7 +412,15 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 40px; */
+
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: 325px;
+    padding-left: 27px;
 }
 
 .search select {
@@ -382,6 +489,16 @@ a {
 }
 
 .availableSupers{
+    
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: 325px;
+    padding-left: 27px;
+    
+    /*
     grid-area: main;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -391,7 +508,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 40px; */
 }
 
 /*.availableSupers a{
@@ -615,6 +732,7 @@ a {
     position: relative;
     left: 40px;
 }
+
 /* css do Restaurant1.html*/
 
 #Restaurant1Header{
@@ -631,7 +749,7 @@ a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* css do Restaurant2.html*/
@@ -649,7 +767,7 @@ a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* css do Restaurant3.html*/
@@ -667,7 +785,7 @@ a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* css do Restaurant4.html*/
@@ -685,7 +803,7 @@ a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    padding-left: 20px;
+    text-align: center;
 }
 
 /* css do shoppingCart.html */
