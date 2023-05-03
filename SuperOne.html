@@ -9,30 +9,71 @@
         <title>Supermarket 1</title>
     </head>
 
-    <body id="bodySuperone">
-        <div id = size>
-            <header id = "superOneHead">
-                <p>Supermarket 1</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
-            </header>
-            <div class = searchSuperOne>
-                <select id="searchOne">
+    <div id = size>
+        <header id = "superOneHead">
+            <p>Supermarket 1</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
+        </header>
+        <body>
+            <div class = "searchSuperOne">
+                <select name="searchSuperOne" id="searchOne" onchange="display()">
                     <option value="Type of food" selected="selected">Type of food</option>
                     <option value="Dairy Products">Dairy Products</option>
                     <option value="Bakery">Bakery</option>
                     <option value="Meat">Meat</option>
                     <option value="Fish">Fish</option>
                     <option value="Vegetables">Vegetables</option>
-                    <option id= "0" value="Fruits" onclick ="renderProducts(this.id)">Fruits</option>
+                    <option value="Fruits">Fruits</option>
                 </select>
             
-            
-            <div id ="products">
-                    <!---renderProducts-->
+
+            <div id="Dairy Products" style="display: none;">
+                <div class = oatMilk>
+                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                    <p id="text">Oat Milk</p>
+                </div>
             </div>
-        </div>
-        </div>
-        <script src = scriptSupermarket.js></script>
-    </body>
+            <div id="Bakery" style="display: none;">
+                <div class = bread>
+                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                    <p id="text">Bread</p>
+                </div>
+            </div>
+            <div id="Meat" style="display: none;">
+                <div class = chicken>
+                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                    <p id="text">Chicken</p>
+                </div>
+            </div>
+            <div id="Fish" style="display: none;">
+                <div class = sardine>
+                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                    <p id="text">Sardine</p>
+                </div>
+            </div>
+            <div id="Vegetables" style="display: none;">
+                <div class = brocolli>
+                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                    <p id="text">Brocolli</p>
+                </div>
+            </div>
+            <div id="Fruits" style="display: none;">
+                <div class = apple>
+                    <img class = "imageTarget" id="imageTarget" src="redApple.jpg" alt="Red apples">
+                    <p id="appleItem" class="appleItem">Apples</p><p id="price" class="price">2,00 €/kg</p>
+                    <!-- A TESTAR -->
+                    <div class="inc-button">
+                        <button id="down" onclick=" down('0', 'myNumber')">-</button>
+                        <input type="text" id="myNumber" value="0" />
+                        <button id="up" onclick="up('10', 'myNumber')">+</button>
+                        <button onclick="addItem('appleItem', 'price', 'myNumber')" id="add">Add</button>
+
+                    </div>
+
+                    <!-- FIM DO TESTE -->
+                </div>
+            </div>
+        </body>
+    </div>
     <a href="home.html">
         <button id="homeButton"> Home </button>
     </a>

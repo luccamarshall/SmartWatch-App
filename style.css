@@ -177,6 +177,142 @@ a {
 
 }
 
+/* css das setas para voltar atrás */
+#backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 75px;
+    background-color: #48abe0;
+}
+
+#offersHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 105px;
+}
+
+#restaurantHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 63px;
+}
+
+#Restaurant1Header #backArrow{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant2Header #backArrow{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant3Header #backArrow{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#Restaurant4Header #backArrow{
+    font-size: 40px;
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 30px;
+}
+
+#shopsHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 89px;
+}
+
+#supermarketHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 19px;
+}
+
+#nearmeHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 101px;
+}
+
 /* css do Settings.html */
 
 #settingsHead {
@@ -187,104 +323,6 @@ a {
     justify-content: center;
     display: flex;
     font-size: 40px;
-}
-
-#backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 75px;
-    /*padding-right: ;
-    /*width: 40px;
-    height: 40px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: left;
-    left: 0px;*/
-}
-
-#offersHead #backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 111px;
-}
-
-#restaurantHead #backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 70px;
-}
-
-#Restaurant1Header #backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 30px;
-}
-
-#Restaurant2Header #backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 30px;
-}
-
-#Restaurant3Header #backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 30px;
-}
-
-#Restaurant4Header #backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 30px;
-}
-
-#shopsHead #backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 98px;
-}
-
-#supermarketHead #backArrow{
-    font-size: 40px;
-    padding-top: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 32px;
-}
-
-#nearmeHead #backArrow{
-    font-size: 40px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    position: relative;
-    right: 111px;
 }
 
 .settings {
@@ -356,6 +394,7 @@ a {
     box-shadow: 0 2px 4px darkslategray;
     border-color: #48abe0;
     display: none;
+    cursor: pointer;
 }
 
 /* css do Shops.html */
@@ -486,6 +525,16 @@ a {
     display: flex;
     font-size: 40px;
     padding-top: 20px;
+}
+
+.searchSuperOne{
+    grid-area: main;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: 325px;
+    padding-left: 27px;
 }
 
 .availableSupers{
