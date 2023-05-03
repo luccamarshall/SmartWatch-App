@@ -462,34 +462,32 @@ a {
     padding-left: 27px;
 }
 
-.search select {
+#searchB{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+#searchBar {
     border-radius: 5px;
     font-size: 25px;
-    height: 100px;
-    width: 400px;
+    height: 60px;
+    width: 350px;
     box-shadow: 0 2px 4px darkslategray;
     border-color: #48abe0;
 }
-
-/*.searchRes a{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 30px;
-    flex-direction: column;
-    text-decoration: none;
-    position: relative;
-    top: 10px;
-    display: none;
-}*/
 
 .searchRes button {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     font-size: 25px;
-    height: 70px;
-    margin-top: 10px;
+    height: 80px;
     width: 350px;
     box-shadow: 0 2px 4px darkslategray;
     cursor: pointer;
@@ -533,12 +531,11 @@ a {
     align-items: center;
     justify-content: center;
     overflow: auto;
-    height: 325px;
+
     padding-left: 27px;
 }
 
 .availableSupers{
-    
     grid-area: main;
     flex-direction: column;
     align-items: center;
@@ -547,37 +544,15 @@ a {
     height: 325px;
     padding-left: 27px;
     
-    /*
-    grid-area: main;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    height: 325px;
-    padding-left: 20px;
-    overflow: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px; */
 }
 
-/*.availableSupers a{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 30px;
-    flex-direction: column;
-    text-decoration: none;
-    right: 110px;
-    top: 30px;
-}*/
-
-.availableSupers button{
+.availableSupers button {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     font-size: 25px;
-    height: 70px;
-    margin-top: 10px;
+    height: 80px;
     width: 350px;
     box-shadow: 0 2px 4px darkslategray;
     cursor: pointer;
@@ -605,30 +580,29 @@ a {
 }
 
 .searchSuperOne {
-    grid-area: main;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    height: 325px;
-    width: 450px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    overflow: auto;
+    height: 325px;
+    padding-left: 27px;
 }
 
 .searchSuperOne select {
+    grid-area: main;
     border-radius: 5px;
     padding: 5px;
     font-size: 25px;
-    height: 100px;
-    width: 400px;
+    height: 80px;
+    width: 380px;
     box-shadow: 0 2px 4px darkslategray;
     border-color: #48abe0;
 
 }
 
 .searchSuperOne select:active {
-    top: 40px;
+    height: 40px;
+    width: 380px;
     background-color: lavender;
     box-shadow: 0 0 2px darkslategray;
     transform: translateY(2px);
@@ -644,7 +618,6 @@ a {
 }
 
 
-
 #price{
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
@@ -653,16 +626,6 @@ a {
     display: flex;
     font-size: 30px;
 }
-
-/*
-#text {
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 30px;
-}*/
 
 #cartValue{
     font-size: 30px;

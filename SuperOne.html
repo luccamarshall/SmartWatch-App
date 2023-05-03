@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <title>Supermarket 1</title>
-    </head>
+<html lang="en">
 
-    <div id = size>
-        <header id = "superOneHead">
-            <p>Supermarket 1</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
-        </header>
-        <body>
-            <div class = "searchSuperOne">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Supermarket 1</title>
+</head>
+
+<body>
+
+    <body id="bodySuperone">
+        <div id=size>
+            <header id="superOneHead">
+                <p>Supermarket 1</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
+            </header>
+            <div class=searchSuperOne>
                 <select name="searchSuperOne" id="searchOne" onchange="display()">
                     <option value="Type of food" selected="selected">Type of food</option>
                     <option value="Dairy Products">Dairy Products</option>
@@ -24,57 +27,56 @@
                     <option value="Vegetables">Vegetables</option>
                     <option value="Fruits">Fruits</option>
                 </select>
-            
 
-            <div id="Dairy Products" style="display: none;">
-                <div class = oatMilk>
-                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
-                    <p id="text">Oat Milk</p>
-                </div>
-            </div>
-            <div id="Bakery" style="display: none;">
-                <div class = bread>
-                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
-                    <p id="text">Bread</p>
-                </div>
-            </div>
-            <div id="Meat" style="display: none;">
-                <div class = chicken>
-                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
-                    <p id="text">Chicken</p>
-                </div>
-            </div>
-            <div id="Fish" style="display: none;">
-                <div class = sardine>
-                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
-                    <p id="text">Sardine</p>
-                </div>
-            </div>
-            <div id="Vegetables" style="display: none;">
-                <div class = brocolli>
-                    <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
-                    <p id="text">Brocolli</p>
-                </div>
-            </div>
-            <div id="Fruits" style="display: none;">
-                <div class = apple>
-                    <img class = "imageTarget" id="imageTarget" src="redApple.jpg" alt="Red apples">
-                    <p id="appleItem" class="appleItem">Apples</p><p id="price" class="price">2,00 €/kg</p>
-                    <!-- A TESTAR -->
-                    <div class="inc-button">
-                        <button id="down" onclick=" down('0', 'myNumber')">-</button>
-                        <input type="text" id="myNumber" value="0" />
-                        <button id="up" onclick="up('10', 'myNumber')">+</button>
-                        <button onclick="addItem('appleItem', 'price', 'myNumber')" id="add">Add</button>
 
+                <div id="Dairy Products" style="display: none;">
+                    <div class=oatMilk>
+                        <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                        <p id="text">Oat Milk</p>
                     </div>
+                </div>
+                <div id="Bakery" style="display: none;">
+                    <div class=bread>
+                        <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                        <p id="text">Bread</p>
+                    </div>
+                </div>
+                <div id="Meat" style="display: none;">
+                    <div class=chicken>
+                        <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                        <p id="text">Chicken</p>
+                    </div>
+                </div>
+                <div id="Fish" style="display: none;">
+                    <div class=sardine>
+                        <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                        <p id="text">Sardine</p>
+                    </div>
+                </div>
+                <div id="Vegetables" style="display: none;">
+                    <div class=brocolli>
+                        <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                        <p id="text">Brocolli</p>
+                    </div>
+                </div>
+                <div id="Fruits" style="display: none;">
+                    <div class=apple>
+                        <img class="imageTarget" id="imageTarget" src="redApple.jpg" alt="Red apples">
+                        <p id="appleItem" class="appleItem">Apples</p>
+                        <p id="price" class="price">2,00 €/kg</p>
+                        <!-- A TESTAR -->
+                        <div class="inc-button">
+                            <button id="down" onclick=" down('0', 'myNumber')">-</button>
+                            <input type="text" id="myNumber" value="0" />
+                            <button id="up" onclick="up('10', 'myNumber')">+</button>
+                            <button onclick="addItem('appleItem', 'price', 'myNumber')" id="add">Add</button>
 
-                    <!-- FIM DO TESTE -->
+                        </div>
+
+                        <!-- FIM DO TESTE -->
+                    </div>
                 </div>
             </div>
-        </body>
-    </div>
+        </div>
+    </body>
     <a href="home.html">
-        <button id="homeButton"> Home </button>
-    </a>
-</html>
