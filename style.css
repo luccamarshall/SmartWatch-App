@@ -789,3 +789,15 @@ a {
     transition: all 0.2s ease;
     margin-top: 10px;
 }
+
+/* css do QRcode.html */
+#QRheader{
+    grid-area: header;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    display: flex; 
+    padding-top: 20px;
+    text-align: center;
+}
