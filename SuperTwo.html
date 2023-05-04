@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/639a48792f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Supermarket 2</title>
+</head>
+
+<body>
+
+    <body id="bodySuperone">
+        <div id=size>
+            <div id = superOneHead2>
+                <header id="superOneHead">
+                    <a href="Supermarket.html" ><i id = "backArrow" class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
+                    Supermarket 2 <br> 2 km
+                    <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart2"></a>
+                </header>
+                <select name="searchSuperOne" id="searchOne" onchange="display()">
+                    <option value="Type of food" selected="selected">Type of food</option>
+                    <option value="Dairy Products">Dairy Products</option>
+                    <option value="Bakery">Bakery</option>
+                </select>
+            </div>
+            
+            <div class=searchSuperOne>
+                
+                <div id="Dairy Products" style="display: none;">
+                    <div class=oatMilk>
+                        <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                        <p id="text">Oat Milk</p>
+                    </div>
+                </div>
+                <div id="Bakery" style="display: none;">
+                    <div class=bread>
+                        <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
+                        <p class="text">Bread - 1,00 € / unit </p>
+                        <div class="input-group2">
+                            <button id="down" onclick=" down('0', 'myNumber')">-</button>
+                            <input type="text" id="myNumber" value="0" />
+                            <button id="up" onclick="up('10', 'myNumber')">+</button>
+                            <button id="add">Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="Fruits" style="display: none;">
+                    <div class=apple>
+                        <img class="imageSupers" src="redApple.jpg" alt="Red apples">
+                        <p id="appleItem" class="text">Apples - 2,00€ / kg </p>                        
+                        <div class="input-group2">
+                            <button id="down" onclick=" down('0', 'myNumber')">-</button>
+                            <input type="text" id="myNumber" value="0" />
+                            <button id="up" onclick="up('10', 'myNumber')">+</button>
+                            <button id="add">Add</button>
+                        </div>
+
+                        <p class="text">Bananas - 1,00€ / kg </p>                      
+                        <div class="input-group2">
+                            <button id="down2" onclick=" down('0', 'myNumber2')">-</button>
+                            <input type="text" id="myNumber2" value="0" />
+                            <button id="up2" onclick="up('10', 'myNumber2')">+</button>
+                            <button id="add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <a href="home.html">

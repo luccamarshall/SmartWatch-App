@@ -59,38 +59,40 @@
                     </div>
                 </div>
                 <div id="Vegetables" style="display: none;">
-                    <div class=brocolli>
-                        <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
-                        <p id="text">Brocolli</p>
+                    <!--<img class="imageSupers" src="redApple.jpg" alt="Red apples">-->
+                    <p class="text">Brocolli - 2,49€ / kg </p>                        
+                    <div class="input-group2">
+                        <button id="down" class="btn btn-default" onclick=" down('0', 'myNumber')">-</button>
+                        <input type="text" id="myNumber" class="form-control input-number" value="0" />
+                        <button id="up" class="btn btn-default" onclick="up('10', 'myNumber')">+</button>
+                        <button id="add">Add</button>
+                    </div>
+
+                    <p class="text">Potatoes - 1,69€ / kg </p>                  
+                    <div class="input-group2">
+                        <button id="down2" class="btn btn-default" onclick=" down('0', 'myNumber2')">-</button>
+                        <input type="text" id="myNumber2" class="form-control input-number" value="0" />
+                        <button id="up2" class="btn btn-default" onclick="up('10', 'myNumber2')">+</button>
+                        <button id="add2">Add</button>
                     </div>
                 </div>
                 <div id="Fruits" style="display: none;">
-                    <div class=apple>
-                        <!--<img class="imageTarget" id="imageTarget" src="redApple.jpg" alt="Red apples">-->
-                        <p id="appleItem" class="text">Apples - 2,00€ / kg </p>                        
-                        <div class="input-group2">
-                            <button id="down" onclick=" down('0', 'myNumber')">-</button>
-                            <input type="text" id="myNumber" value="0" />
-                            <button id="up" onclick="up('10', 'myNumber')">+</button>
-                            <button id="add">Add</button>
-                        </div>
-
-                        <p id="appleItem" class="text">Bananas - 1,00€ / kg </p>                      
-                        <div class="input-group2">
-                            <button id="down2" onclick=" down('0', 'myNumber2')">-</button>
-                            <input type="text" id="myNumber2" value="0" />
-                            <button id="up2" onclick="up('10', 'myNumber2')">+</button>
-                            <button id="add">Add</button>
-                        </div>
-
-                        <p id="appleItem" class="text">Tomato - 3,00€ / kg </p>
-                        <div class="input-group2">
-                            <button id="down2" onclick=" down('0', 'myNumber2')">-</button>
-                            <input type="text" id="myNumber2" value="0" />
-                            <button id="up2" onclick="up('10', 'myNumber2')">+</button>
-                            <button id="add">Add</button>
-                        </div>
+                    <img class="imageSupers" src="redApple.jpg" alt="Red apples">
+                    <p class="text">Apples - 2,00€ / kg </p>                        
+                    <div class="input-group2">
+                        <button id="down" class="btn btn-default" onclick=" down('0', 'myNumber')">-</button>
+                        <input type="text" id="myNumber" class="form-control input-number" value="0" />
+                        <button id="up" class="btn btn-default" onclick="up('10', 'myNumber')">+</button>
+                        <button id="add">Add</button>
                     </div>
+
+                    <p class="text">Bananas - 1,00€ / kg </p>                  
+                    <div class="input-group2">
+                        <button id="down2" class="btn btn-default" onclick=" down('0', 'myNumber2')">-</button>
+                        <input type="text" id="myNumber2" class="form-control input-number" value="0" />
+                        <button id="up2" class="btn btn-default" onclick="up('10', 'myNumber2')">+</button>
+                        <button id="add2">Add</button>
+                    </div> 
                 </div>
             </div>
         </div>
