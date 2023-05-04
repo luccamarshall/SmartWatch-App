@@ -594,16 +594,6 @@ a {
 }
 
 #searchOne{
-    /*
-    border-radius: 5px;
-    font-size: 25px;
-    height: 60px;
-    width: 350px;
-    right: 500px;
-    left:100px;
-    box-shadow: 0 2px 4px darkslategray;
-    border-color: #48abe0;  
-    */ 
     border-radius: 5px;
     font-size: 25px;
     height: 60px;
@@ -623,6 +613,7 @@ a {
     overflow: auto;
     height: 200px;
     padding-left: 27px;
+    margin-top: 10px;
 }
 
 .text{
@@ -632,34 +623,12 @@ a {
     text-align: center;
 }
 
-.imageTarget {
+.imageSupers {
     width: 200px;
-    height: 150px;
-    top: 20px;
-    left: 80px;
+    height: 125px;
+    left: 95px;
     position: relative;
 }
-
-/*
-#price{
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 30px;
-}*/
-/*
-#cartValue{
-    font-size: 30px;
-    padding-left: 50px;
-}
-
-#shoppingCart{
-    width: 20px;
-    height: 20px;
-    position: relative;
-}*/
 
 /*css do Grupo que adiciona quantidades nos restaurants e no superOne*/
 .input-group{
@@ -675,6 +644,13 @@ a {
     box-shadow: 0 0 2px darkslategray;
     transform: translateY(2px);
 }
+
+.input-group2 button:active {
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}
+
 #myNumber{
     width: 100px;
     height: 50px;
