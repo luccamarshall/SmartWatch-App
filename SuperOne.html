@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/639a48792f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Supermarket 1</title>
@@ -14,10 +15,12 @@
 
     <body id="bodySuperone">
         <div id=size>
-            <header id="superOneHead">
-                <p>Supermarket 1</p> <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart"></a>
-            </header>
-            <div class=searchSuperOne>
+            <div id = superOneHead2>
+                <header id="superOneHead">
+                    <a href="Supermarket.html" ><i id = "backArrow" class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
+                    Supermarket 1 <br> 200 m
+                    <a href="shoppingCart.html"><img src="shoppingCart.png" id="shoppingCart2"></a>
+                </header>
                 <select name="searchSuperOne" id="searchOne" onchange="display()">
                     <option value="Type of food" selected="selected">Type of food</option>
                     <option value="Dairy Products">Dairy Products</option>
@@ -27,8 +30,10 @@
                     <option value="Vegetables">Vegetables</option>
                     <option value="Fruits">Fruits</option>
                 </select>
-
-
+            </div>
+            
+            <div class=searchSuperOne>
+                
                 <div id="Dairy Products" style="display: none;">
                     <div class=oatMilk>
                         <!---<img class = "imageApple" id="imageApple" src="redApple.jpg" alt="Red apples">--->
@@ -61,19 +66,30 @@
                 </div>
                 <div id="Fruits" style="display: none;">
                     <div class=apple>
-                        <img class="imageTarget" id="imageTarget" src="redApple.jpg" alt="Red apples">
-                        <p id="appleItem" class="appleItem">Apples</p>
-                        <p id="price" class="price">2,00 €/kg</p>
-                        <!-- A TESTAR -->
-                        <div class="inc-button">
+                        <!--<img class="imageTarget" id="imageTarget" src="redApple.jpg" alt="Red apples">-->
+                        <p id="appleItem" class="text">Apples - 2,00€ / kg </p>                        
+                        <div class="input-group2">
                             <button id="down" onclick=" down('0', 'myNumber')">-</button>
                             <input type="text" id="myNumber" value="0" />
                             <button id="up" onclick="up('10', 'myNumber')">+</button>
-                            <button onclick="addItem('appleItem', 'price', 'myNumber')" id="add">Add</button>
-
+                            <button id="add">Add</button>
                         </div>
 
-                        <!-- FIM DO TESTE -->
+                        <p id="appleItem" class="text">Bananas - 1,00€ / kg </p>                      
+                        <div class="input-group2">
+                            <button id="down2" onclick=" down('0', 'myNumber2')">-</button>
+                            <input type="text" id="myNumber2" value="0" />
+                            <button id="up2" onclick="up('10', 'myNumber2')">+</button>
+                            <button id="add">Add</button>
+                        </div>
+
+                        <p id="appleItem" class="text">Tomato - 3,00€ / kg </p>
+                        <div class="input-group2">
+                            <button id="down2" onclick=" down('0', 'myNumber2')">-</button>
+                            <input type="text" id="myNumber2" value="0" />
+                            <button id="up2" onclick="up('10', 'myNumber2')">+</button>
+                            <button id="add">Add</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -205,6 +205,20 @@ a {
     right: 105px;
 }
 
+#superOneHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 10px;
+    top:10px;
+}
+
 #restaurantHead #backArrow{
     font-size: 40px;
     padding: 5px;
@@ -463,6 +477,7 @@ a {
 }
 
 #searchB{
+    
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
@@ -473,6 +488,7 @@ a {
 }
 
 #searchBar {
+    
     border-radius: 5px;
     font-size: 25px;
     height: 60px;
@@ -525,16 +541,6 @@ a {
     padding-top: 20px;
 }
 
-.searchSuperOne{
-    grid-area: main;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-
-    padding-left: 27px;
-}
-
 .availableSupers{
     grid-area: main;
     flex-direction: column;
@@ -567,57 +573,64 @@ a {
 
 /* css do SuperOne.html*/
 
-
 #superOneHead {
     grid-area: header;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    justify-content: center;
+    display: flex; 
+    padding-top: 20px;
+}
+
+#searchOne{
+    /*
+    border-radius: 5px;
+    font-size: 25px;
+    height: 60px;
+    width: 350px;
+    right: 500px;
+    left:100px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-color: #48abe0;  
+    */ 
+    border-radius: 5px;
+    font-size: 25px;
+    height: 60px;
+    width: 350px;
+    margin-left: 50px;
     align-items: center;
     justify-content: center;
-    display: flex;
-    padding-top: 8px;
-    font-size: 40px;
+    box-shadow: 0 2px 4px darkslategray;
+    border-color: #48abe0;
 }
 
 .searchSuperOne {
+    grid-area: main;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: auto;
-    height: 325px;
+    height: 200px;
     padding-left: 27px;
 }
 
-.searchSuperOne select {
-    grid-area: main;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 25px;
-    height: 80px;
-    width: 380px;
-    box-shadow: 0 2px 4px darkslategray;
-    border-color: #48abe0;
-
-}
-
-.searchSuperOne select:active {
-    height: 40px;
-    width: 380px;
-    background-color: lavender;
-    box-shadow: 0 0 2px darkslategray;
-    transform: translateY(2px);
+.text{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
 }
 
 .imageTarget {
     width: 200px;
     height: 150px;
-    top: 30px;
-    left: 50px;
+    top: 20px;
+    left: 80px;
     position: relative;
-    bottom: 60px;
 }
 
-
+/*
 #price{
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
@@ -625,8 +638,8 @@ a {
     justify-content: center;
     display: flex;
     font-size: 30px;
-}
-
+}*/
+/*
 #cartValue{
     font-size: 30px;
     padding-left: 50px;
@@ -636,12 +649,17 @@ a {
     width: 20px;
     height: 20px;
     position: relative;
-}
+}*/
 
 /*css do Grupo que adiciona quantidades nos restaurants e no superOne*/
 .input-group{
     padding-left: 60px;
 }
+
+.input-group2{
+    padding-left: 30px;
+}
+
 .input-group button:active {
     background-color: lavender;
     box-shadow: 0 0 2px darkslategray;
@@ -743,6 +761,13 @@ a {
     height: 40px;
     position: relative;
     left: 40px;
+}
+
+#shoppingCart2 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 10px;
 }
 
 /* css do Restaurant1.html*/
