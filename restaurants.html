@@ -10,13 +10,12 @@
     <title>Document</title>
 </head>
 <div id="size">
-    <header id="restaurantHead">
-        <a href="Shops.html" ><i id = "backArrow" class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
-        Restaurants
-    </header>
-    <body>
-        <div class="search">
-            <div id = "searchB">
+    <div>
+        <header id="restaurantHead">
+            <a href="Shops.html" ><i id = "backArrow" class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
+            Restaurants
+        </header>
+        <div id = "searchB">
             <select id="searchBar" onchange="displayRes()">
                 <option value="select">None</option>
                 <option value="Comida mexicana">Mexican</option>
@@ -25,6 +24,11 @@
                 <option value="Fast food">Fast Food</option>
             </select>
         </div>
+    </div>
+    
+    <body>
+        <div class="search">
+            
 
             <div class="searchRes">
               <a href="Restaurant2.html" id="Mexican" style="display: block;"><button id="res2">Restaurant 2 <br> 3 km</button></a>
@@ -36,8 +40,8 @@
     </body>
 </div>
 <script>
-document.getElementById("search").addEventListener("load", getPreferences());
-document.getElementById("search").addEventListener("load", displayRes());
+document.getElementById("searchBar").addEventListener("load", getPreferences());
+document.getElementById("searchBar").addEventListener("load", displayRes());
 </script>
 <a href="home.html">
     <button id="homeButton"> Home </button>
