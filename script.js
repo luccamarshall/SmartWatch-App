@@ -71,6 +71,14 @@ function saveOption() {
     localStorage.setItem("Preferences", selectedOption);
 }
 
+function remove(){
+    const myButton = document.getElementById('apple');
+
+    myButton.addEventListener('click', function () {
+        myButton.remove();
+    });
+}
+
 
 function changeColor() {
     const headers = document.querySelectorAll('header');
