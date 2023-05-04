@@ -161,7 +161,7 @@ function display(){
 }
 
 function displayRes(){
-    var e = document.getElementById("search");
+    var e = document.getElementById("searchBar");
     switch (e.selectedIndex) {
         case 0:
             document.getElementById("Mexican").style.display = 'block'
@@ -213,7 +213,7 @@ function down(min, id) {
 function getPreferences(){
     var savedOption = localStorage.getItem("Preferences");
     if (savedOption) {
-        document.getElementById("search").value = savedOption;
+        document.getElementById("searchBar").value = savedOption;
     }
 }
 
