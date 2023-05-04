@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/639a48792f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
 	<title>Shopping Cart</title>
@@ -11,12 +12,13 @@
 <body>
     <div id = "size">
         <header id = "shoppingCartHead">
+            <a href="home.html" ><i id = "backArrow" class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></a>
             Shopping Cart
         </header>
         <div id = "shoppingCartMain">
-            <button id = "apple" onclick ="remove()" > apple <br> Price : 2.99 € Quantity : 8</button> 
+            <button id = "apple" onclick ="remove()" > Apples <br> Price : 2.00€ Quantity : 1 kg</button> 
 
-            <p id = "total" > total : 2.99€ </p>
+            <p id = "total" > total : 2.00€ </p>
 
             <a href = "Pagamento.html">
                 <button id = "pagamento"> Checkout </button>
@@ -24,4 +26,7 @@
         </div>
     </div>
 </body>
+<a href="home.html">
+    <button id="homeButton"> Home </button>
+</a>
 </html>

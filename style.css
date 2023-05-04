@@ -205,6 +205,32 @@ a {
     right: 105px;
 }
 
+#cartaoHeader #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 9px;
+}
+
+#shoppingCartHead #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 40px;
+}
+
 #superOneHead #backArrow{
     font-size: 40px;
     padding: 5px;
@@ -217,6 +243,19 @@ a {
     position: relative;
     right: 10px;
     top:10px;
+}
+
+#QRheader #backArrow{
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    right: 9px;
 }
 
 #restaurantHead #backArrow{
@@ -628,6 +667,7 @@ a {
     height: 125px;
     left: 95px;
     position: relative;
+    top: 20px;
 }
 
 /*css do Grupo que adiciona quantidades nos restaurants e no superOne*/
@@ -730,6 +770,96 @@ a {
 }
 
 #add2 {
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 90px;
+    height: 60px;
+}
+
+#myNumber3{
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+}
+
+#up3{
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 60px;
+    height: 60px;
+}
+
+#down3{
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 60px;
+    height: 60px;
+}
+
+#add3 {
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 90px;
+    height: 60px;
+}
+
+#myNumber4{
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px darkslategray;
+}
+
+#up4{
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 60px;
+    height: 60px;
+}
+
+#down4{
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 60px;
+    height: 60px;
+}
+
+#add4 {
     color: white;
     border-radius: 5px;
     padding: 5px;
@@ -951,15 +1081,34 @@ a {
     position: relative;
 }
 
-#transfer{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    padding-left: 20px;
-    text-align: center;
+#transferButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* css do sopping cart */
+#transferButton  button{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 25px;
+    height: 70px;
+    margin-top: 10px;
+    width: 350px;
+    box-shadow: 0 2px 4px darkslategray;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#transferButton  button:active{
+    top: 40px;
+    background-color: lavender;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
+}
+
+/* css do shopping cart */
 
 #shoppingCartHead{
     grid-area: header;
